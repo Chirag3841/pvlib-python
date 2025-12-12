@@ -1730,7 +1730,7 @@ class ModelChain:
         ...     'poa_global': [900, 850],
         ...     'poa_direct': [600, 560],
         ...     'poa_diffuse': [300, 290],
-        ... }, 
+        ... },
         ... index=pd.date_range("2021-06-01", periods=2, freq="H"))
         >>>
         >>> mc.run_model_from_poa(poa)
@@ -1845,7 +1845,6 @@ class ModelChain:
         Examples
         --------
         Single-array system:
-
         >>> import pandas as pd
         >>> from pvlib.pvsystem import PVSystem
         >>> from pvlib.location import Location
@@ -1866,7 +1865,6 @@ class ModelChain:
         <pvlib.modelchain.ModelChain ...>
 
         Multi-array system:
-        
         >>> array1 = Array(tilt=30, azimuth=180)
         >>> array2 = Array(tilt=10, azimuth=90)
         >>> system = PVSystem(arrays=[array1, array2],
